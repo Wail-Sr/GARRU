@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pgraph"
+    app:startDestination="@id/parkListFragment">
+
+    <fragment
+        android:id="@+id/parkListFragment"
+        android:name="com.example.parkpage.ParkListFragment"
+        android:label="fragment_park_list"
+        tools:layout="@layout/fragment_park_list" >
+        <action
+            android:id="@+id/action_parkListFragment_to_reservationFragment"
+            app:destination="@id/reservationFragment" />
+        <action
+            android:id="@+id/action_parkListFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+        <action
+            android:id="@+id/action_parkListFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/parkDetailFragment"
+        android:name="com.example.parkpage.ParkDetailFragment"
+        android:label="fragment_park_detail"
+        tools:layout="@layout/fragment_park_detail" />
+    <fragment
+        android:id="@+id/reservationFragment"
+        android:name="com.example.login_page.ReservationFragment"
+        android:label="ReservationFragment" >
+        <action
+            android:id="@+id/action_reservationFragment_to_parkListFragment"
+            app:destination="@id/parkListFragment"
+            app:popUpTo="@id/parkListFragment" />
+        <action
+            android:id="@+id/action_reservationFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+        <action
+            android:id="@+id/action_reservationFragment_to_parkListFragment3"
+            app:destination="@id/parkListFragment" />
+        <action
+            android:id="@+id/action_reservationFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.example.login_page.mapFragment"
+        android:label="mapFragment" >
+        <action
+            android:id="@+id/action_mapFragment_to_reservationFragment"
+            app:destination="@id/reservationFragment" />
+        <action
+            android:id="@+id/action_mapFragment_to_parkListFragment"
+            app:destination="@id/parkListFragment" />
+        <action
+            android:id="@+id/action_mapFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/QRFragment"
+        android:name="com.example.login_page.QRFragment"
+        android:label="QRFragment" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.login_page.SearchFragment"
+        android:label="SearchFragment" >
+        <action
+            android:id="@+id/action_searchFragment_to_mapFragment"
+            app:destination="@id/mapFragment"
+            app:launchSingleTop="false" />
+        <action
+            android:id="@+id/action_searchFragment_to_reservationFragment"
+            app:destination="@id/reservationFragment" />
+        <action
+            android:id="@+id/action_searchFragment_to_parkListFragment"
+            app:destination="@id/parkListFragment" />
+    </fragment>
+</navigation>

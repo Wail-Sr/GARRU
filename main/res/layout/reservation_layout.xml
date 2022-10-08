@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/parkname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/calibrib"
+        android:text="Parking Name"
+        android:textColor="#000"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="@+id/thereservation"
+        app:layout_constraintTop_toTopOf="@+id/thereservation" />
+
+    <ImageView
+        android:id="@+id/thereservation"
+        android:layout_width="351dp"
+        android:layout_height="118dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/park_info" />
+
+    <TextView
+        android:id="@+id/dayselected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/calibrib"
+        android:text="Day"
+        android:textColor="#000"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="@+id/parkname"
+        app:layout_constraintTop_toBottomOf="@+id/parkname" />
+
+    <TextView
+        android:id="@+id/opentime2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/calibri"
+        android:text="08 : 00"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/dayselected"
+        app:layout_constraintTop_toBottomOf="@+id/dayselected" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/calibri"
+        android:text="-"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/opentime2"
+        app:layout_constraintTop_toTopOf="@+id/opentime2" />
+
+    <TextView
+        android:id="@+id/closetime2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/calibri"
+        android:text="17 : 00"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toTopOf="@+id/textView12" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="42dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="20dp"
+        android:rotation="180"
+        app:layout_constraintBottom_toBottomOf="@+id/thereservation"
+        app:layout_constraintEnd_toEndOf="@+id/thereservation"
+        app:layout_constraintTop_toTopOf="@+id/thereservation"
+        app:srcCompat="@drawable/arrow_24" />
+</androidx.constraintlayout.widget.ConstraintLayout>
