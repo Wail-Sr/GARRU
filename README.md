@@ -1,4 +1,7 @@
 # GARRU
+Advanced mobile app designed to streamline your parking experience! With our intuitive interface, effortlessly search for nearby parking lots, reserve your desired space for a specific time and date, all while ensuring security through QR code verification.
+
+### Application screenshots
 
 <p float="left">
   <img src="https://user-images.githubusercontent.com/56247982/194707727-000d4d8b-edc1-4100-9ff9-2fece82f62d0.jpg" width="120" />
